@@ -1,0 +1,22 @@
+<nav id='nav_drop_down'>
+    <div id='nav_burger'>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <% if page == "home" %>
+      <%= render 'navigation/home_links' %>
+    <% else %>
+      <%= render 'navigation/resource_links' %>
+    <% end %>
+
+  </nav>
+
+  <nav id='nav_bar'>
+    <% if page == "home" %>
+      <%= render 'navigation/home_links' %>
+    <% else %>
+      <%= render 'navigation/resource_links' %>
+    <% end %>
+  </nav>

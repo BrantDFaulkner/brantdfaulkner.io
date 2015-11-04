@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: $default_text;
+  padding-bottom: 50px;
+  @media (min-width: $break_1) {
+    padding-top: 50px;
+  }
+}
+
+section {
+  @include clear_fix;
+  h1:first-child {
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 0 1px 0;
+    border-color: $section_header_border;
+    width: 70%;
+    margin: 30px auto ;
+    @media (min-width: $break_1) {
+      width: 98%;
+    }
+  }
+  h3, h5 {
+    font-style: italic;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 0 1px 0;
+    border-color: $section_header_border;
+    width: 70%;
+    margin: 30px auto;
+  }
+}
+
+
+ul {
+  list-style: none;
+}

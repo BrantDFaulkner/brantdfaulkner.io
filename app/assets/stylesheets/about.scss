@@ -1,0 +1,52 @@
+#about {
+  #technical_expertise {
+    @include clear_fix;
+    div:first-child {
+      width: 70%;
+      margin: auto;
+      @media (min-width: $break_1) {
+        width: 28%;
+        float: left;
+        margin: 1%;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    div:nth-child(2) {
+      @media (min-width: $break_1) {
+        width: 68%;
+        float: left;
+        margin: 1%;
+        h3 {
+          margin-top: 0;
+        }
+      }
+    }
+    p {
+      padding: 0px 10px;
+    }
+  }
+
+  #language {
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 50%;
+      float: left;
+      h5 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  // #img_chicago {
+  //   display: none;
+  //   @media (min-width: 770px) {
+  //     display: block;
+  //     width: 100%;
+  //   }
+  // }
+}

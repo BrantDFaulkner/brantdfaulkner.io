@@ -1,0 +1,35 @@
+.category {
+  h2 {
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 0 1px 0;
+    border-color: $section_header_border;
+    width: 80%;
+    margin: 15px auto ;
+  }
+  h5 {
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+    border-style: none;
+    font-style: italic;
+  }
+  .category_edit {
+    text-align: center;
+  }
+  .resource {
+    width: 90%;
+    margin: auto;
+    h4 {
+      margin-bottom: 0;
+      a {
+        padding: 8px 0;
+        text-decoration: none;
+        color: $link_text;
+      }
+    }
+    p {
+      padding: 0px 20px;
+    }
+  }
+}

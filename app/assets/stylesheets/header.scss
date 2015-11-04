@@ -1,0 +1,29 @@
+#home_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  color: $off_white;
+  background: linear-gradient(0deg, #fff, transparent),
+                #333333 url('lake.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  text-shadow: 5px 8px 10px rgba(0,0,0,.8);
+  div {
+    vertical-align: middle;
+  }
+  h1 {
+      font-size: 4em;
+    }
+  h3  {
+    font-size: 2em;
+    font-style: italic;
+    width: 60%;
+    margin: auto;
+  }
+  @media (min-width: 770px) {
+    height: 800px;
+  }
+}

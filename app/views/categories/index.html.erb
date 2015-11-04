@@ -1,0 +1,26 @@
+<%= render partial: "navigation/navigation", locals: {page: "resources"} %>
+
+<% if logged_in? %>
+  <%= link_to 'New Category', new_category_path %>
+  <%= link_to 'New Resource', new_resource_path %>
+<% end %>
+
+<% @categories.each do |category| %>
+  <section class='category'>
+    <h2><%= category.title %></h2>
+    <h5><%= category.description %></h5>
+    <% if logged_in? %>
+      <div class='category_edit'>
+        <%= link_to 'Edit', edit_category_path(category) %>
+        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    <% end %>
+
+    <% category.resources.each do |resource| %>
+      <%= render partial: "resources/show", locals: {resource: resource} %>
+    <% end %>
+  </section>
+
+<% end %>
+
+
