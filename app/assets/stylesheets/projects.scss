@@ -1,0 +1,26 @@
+#projects {
+  h3 {
+    font-style: normal;
+    border: none;
+    margin: 10px auto;
+    a {
+
+    }
+  }
+  p {
+    text-align: center;
+    padding: 5px;
+  }
+  a {
+    color: $link_text_hover;
+    &:hover {
+      color: $link_text;
+    }
+  }
+  @media (min-width: $break_1) {
+    div {
+      width: 33.33%;
+      float: left;
+    }
+  }
+}
