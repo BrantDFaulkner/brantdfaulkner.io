@@ -27,5 +27,11 @@ $( document ).ready(function() {
     $('#nav_drop_down ul').slideToggle();
   });
 
+  // Smooth Scorll
+  $('#home_links a').on("click", function(){
+    var target = $(this).attr('href')
+    var offset = $(target).offset().top - 60
+    $('body').animate({scrollTop:offset}, '800')
+  });
 
 });
