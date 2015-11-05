@@ -1,0 +1,21 @@
+#admin {
+  width: 80%;
+  margin: 30px auto;
+  max-width: 500px;
+
+  text-align: center;
+  background: lighten($blue_grey, 60%);
+  border: 1px solid $mustard;
+  border-radius: 12px;
+
+  input {
+    text-align: center;
+    width: 60%;
+    height: 40px;
+    border-radius: 8px;
+    &[type="submit"] {
+      background: $blue_grey;
+      color: lighten($mustard, 50%);
+    }
+  }
+}

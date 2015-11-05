@@ -1,15 +1,18 @@
-<h1>Admin login</h1>
 
-<%= form_for :admin, url: '/sessions/new', method: 'post' do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.submit value="Log in" %>
-  </p>
-<% end %>
+<%= render partial: "navigation/navigation", locals: {page: "form"} %>
+
+<div id='admin'>
+  <h1>Admin login</h1>
+
+  <%= form_for :admin, url: '/sessions/new', method: 'post' do |f| %>
+    <p>
+      <%= f.text_field :name, :placeholder => "Admin" %>
+    </p>
+    <p>
+      <%= f.password_field :password, :placeholder => "Password" %>
+    </p>
+    <p>
+      <%= f.submit value="Log in" %>
+    </p>
+  <% end %>
+</div>

@@ -12,4 +12,11 @@ class ApplicationController < ActionController::Base
     !!current_admin
   end
   helper_method :logged_in?
+
+  def require_admin
+    unless logged_in?
+      flash[:error] = "You must have administrative privileges to access this section."
+      redirect_to root_path
+    end
+  end
 end

@@ -39,6 +39,12 @@
       h5 {
         margin-bottom: 15px;
       }
+      a {
+        color: $blue_grey;
+        &:hover {
+          color: $mustard;
+        }
+      }
     }
   }
 
