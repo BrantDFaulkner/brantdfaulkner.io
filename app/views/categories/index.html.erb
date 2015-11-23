@@ -19,7 +19,7 @@
         </div>
       <% end %>
 
-      <% category.resources.each do |resource| %>
+      <% category.resources.order(:title).each do |resource| %>
         <%= render partial: "resources/show", locals: {resource: resource} %>
       <% end %>
     </section>
