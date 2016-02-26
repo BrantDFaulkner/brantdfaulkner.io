@@ -26,6 +26,15 @@
     }
     p {
       padding: 0px 10px;
+      font-size: 1.25em;
+    }
+  }
+
+  #img_chicago {
+    display: none;
+    @media (min-width: 770px) {
+      display: block;
+      width: 100%;
     }
   }
 
@@ -34,11 +43,9 @@
       margin: 0;
       padding: 0;
       text-align: center;
-      width: 50%;
+      font-size: 1.5em;
+      width: 33.33%;
       float: left;
-      h5 {
-        margin-bottom: 15px;
-      }
       a {
         color: $blue_grey;
         &:hover {
@@ -48,11 +55,5 @@
     }
   }
 
-  // #img_chicago {
-  //   display: none;
-  //   @media (min-width: 770px) {
-  //     display: block;
-  //     width: 100%;
-  //   }
-  // }
+
 }
